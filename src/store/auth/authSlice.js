@@ -11,7 +11,7 @@ initialState: {
     errorMessage: null
 },
  reducers: {
-    login: (state,action) =>{
+    login: (state,{payload}) =>{
         state.status= 'authenticated',
         state.uid=payload.uid,
         state.email=payload.email,
